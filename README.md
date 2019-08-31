@@ -1,0 +1,2 @@
+# friakt
+Friakt er et prosjekt jeg gjorde for litt over ett år siden. Det er lagt ut på min venns domene valas.no/jorgen. Dette er et prosjekt som ikke er fullstendig ferigsstilt med et innloggingssystem og mulighet for å legge ut aktiviteter som andres skal kunne "joine" denne funksjonen ble ikke fullført. Signup, signinn og post er ikke blitt stylet. Browse og landingssidene er gjort det til en viss del men det er ikke gjenomgående design og det ser ikke spesielt bra ut men backenden fungerer fint.
