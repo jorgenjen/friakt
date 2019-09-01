@@ -1,0 +1,195 @@
+*{
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+body{
+  background-color: rgba(54, 53, 53, 0.2);
+  overflow-x: hidden;
+}
+#view {
+  width: 100vw;
+  height: 60vh;
+  overflow: hidden;
+}
+#tekst .nav{
+  padding-top: 3vh;
+  opacity: 0;
+}
+#tekst .nav li{
+  display: inline-block;
+  font-size: 1vw;
+}
+#tekst .nav li:nth-child(1){
+  margin-left: 5vw;
+  height: 10vh;
+  width: 10vh;
+  margin-top: -2.5vh;
+  background: url("bilder/placeholder.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+#tekst .nav li:nth-child(2),
+#tekst .nav li:nth-child(3){
+  float: right;
+  margin-right: 5vw;
+  cursor: pointer;
+}
+#view #all{
+  width: 400vw;
+  margin-left: 0;
+  margin-top: -40vh;
+  transition: margin-left 1s;
+  filter: grayscale(60%);
+  z-index: -100;
+  position: relative;
+}
+#view #all ul li{
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+#view #all ul{
+  display: flex;
+}
+#view #all ul li img{
+  width: 100vw;
+  height: auto;
+}
+#tekst {
+  height: 30vh;
+  width: 100vw;
+  display: block;
+  z-index: 10000;
+}
+#tekst h1{
+  font-size: 4vw;
+  font-family: fantasy;
+  color: #363535;
+  padding-top: 5vh;
+  text-align: center;
+}
+#tekst #holder{
+  width: 100vw;
+  text-align: center;
+}
+#tekst span{
+  font-size: 2.5vw;
+  text-align: center;
+  color: #363535;
+  padding-right: 0.2vw;
+  transition: border 0.2s;
+  /*background-color: hsla(227, 79%, 42%, 0.65);*/
+}
+.header{
+  text-align: center;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+  font-size: 2vw;
+  font-variant: small-caps;
+  font-size-adjust: auto;
+  font-weight: lighter;
+  font-family: monospace;
+}
+#what{
+  width: 80vw;
+  height: 30vh;
+/*background-color: rgb(41, 162, 102);*/
+  background-color: #13C7A3;
+  margin-left: 5vw;
+  border-radius: 0.2vw;
+  border-top-left-radius: 1vw;
+  border-bottom-left-radius: 1vw;
+  filter: drop-shadow(-0.2vw 0.2vw 0.1vw grey);
+  color: #D1D1D1;
+  margin-bottom: 0.1vw;
+}
+#what h2{
+  margin-left: 12vw;
+  padding-top: 1.5vh;
+  padding-bottom: 1vh;
+  font-size: 2.2vw;
+}
+#what p{
+  margin-left: 8vw;
+  font-size: 1.5vw;
+}
+#what img{
+  height: 20vh;
+  margin-left: 80vw;
+  margin-top: 5vh;
+  position: absolute;
+  /*bilde possisjon fungerer så lenge det er aspectratio på 16:9 for andre ikke så bra så må
+  bruke javascript til å sjekke window.innerHeigth og breddde del de på værandre å ha forskelige stiller henhold til aspect ratioen*/
+}
+#how{
+  width: 80vw;
+  height: 30vh;
+  margin-left: 15vw;
+  /*background-color: rgb(31, 121, 76);*/
+  background-color: #27AE95;
+  text-align: right;
+  border-radius: 0.2vw;
+  border-top-right-radius: 1vw;
+  border-bottom-right-radius: 1vw;
+  margin-bottom: 5vh;
+  filter: drop-shadow(0.2vw 0.2vw 0.1vw grey);
+  z-index: 1;
+  color: #D1D1D1;
+}
+#how img{
+  height: 20vh;
+  position: absolute;
+  margin-left: -90vw;
+  margin-top: 5vh;
+}
+#how h2{
+  font-size: 2.2vw;
+  margin-right: 12vw;
+  padding-top: 1.5vh;
+  padding-bottom: 1vh;
+}
+#how p{
+  margin-right: 8vw;
+  font-size: 1.5vw;
+}
+#btn{
+  width: 14vw;
+  text-align: center;
+  font-size: 1.5vw;
+  font-family: monospace;
+  font-variant: small-caps;
+  background: #13C7A3;
+  padding: 3vh;
+  border-radius: 25%;
+  filter: drop-shadow(0.3vw 0.3vw 0.3vw grey);
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  transition: width 0.5s;
+  text-decoration: none;
+  color: #000;
+}
+#btn:hover{
+  width: 18vw;
+  font
+  transition: width 0.5s;
+}
+#footer{
+  width: 100vw;
+  height: 10vh;
+  margin-top: 5vh;
+  background-color: #305768; /*kanskje denne: #246E8D*/
+  color: lightgrey;
+  font-family: inherit;
+  font-size: 2.5vh;
+  text-align: center;
+}
+#footer p{
+  padding-top: 3.5vh;
+}
+.nav{
+  opacity: 0;
+}
